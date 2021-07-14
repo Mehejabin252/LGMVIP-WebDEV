@@ -1,0 +1,52 @@
+.Navbar-items {
+    background-color:rgb(43, 2, 43);
+    color: rgb(183, 210, 218);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.Navbar-logo{
+    color: rgb(230, 210, 210);
+    justify-self: start;
+    margin-left: 50px;
+   
+    cursor: pointer;
+}
+.fa-file-word{
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+}
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+.Nav-links{
+    color: rgb(233, 219, 219);
+    text-decoration: none;
+    padding: 0.5rem 3rem;
+   transition: 2s ease-out;
+}
+.Nav-links:hover{
+    color: rgb(29, 24, 24);
+    background: rgb(218, 178, 211);
+    border-radius: 4px;
+ 
+}
+.fa-bars{
+    color: #fff;
+}
+.Nav-icon{
+    display: none;
+}
+.Nav-button-links{
+    display: none;
+}

@@ -1,0 +1,27 @@
+export const Menuitem = [
+    {
+        title:'Home',
+        url:'#',
+        cName:'Nav-links'
+    },
+    {
+        title:'About-Us',
+        url:'#',
+        cName:'Nav-links'
+    },
+    {
+        title:'Join',
+        url:'#',
+        cName:'Nav-links'
+    },
+    {
+        title:'Contact',
+        url:'#',
+        cName:'Nav-links'
+    },
+    {
+        title:'User-Data',
+        url:'#',
+        cName:'Nav-button-links'
+    }
+]
