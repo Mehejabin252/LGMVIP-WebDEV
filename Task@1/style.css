@@ -4,18 +4,18 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #fff;
+    background-color: rgb(247, 235, 235);
+    width: 100%;
     
 }
 .container {
-    width: 1000px;
   height: fit-content;
-   margin-left: auto;
-   margin-right: auto;
+  
     margin-bottom: 10px;
 }
 nav{
-    background-color:rgb(39, 17, 41);
+    width: 100%;
+    background-color:rgb(41, 9, 44);
 }
 
 .logo{
@@ -46,7 +46,8 @@ nav{
 } 
 
 .navbar ul li:hover{
-    background-color: black;
+    background-color: rgb(218, 93, 99);
+    color: black;
 }
 nav::after{
     content: " ";
@@ -69,6 +70,7 @@ nav::after{
 }
 #slider img{
     width: 20%;
+    height: 650px;
    float: left;
   
 }
@@ -88,70 +90,80 @@ nav::after{
     cursor: pointer;
 }
 
-.server{
-    background-color: rgb(247, 243, 239);
+.server h1{
+    align-items: center;
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+}
+.server1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.col{
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 60px 30px 120px 30px;
+    grid-template-areas: "bar" "notify" "text" "stats";
+    border-radius: 18px;
+    background-color: rgb(182, 76, 231);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+   text-align: center;
+   justify-content: center;
+   transition: 0.5s ease;
+   cursor: pointer;
    
 }
-.server h1{
-    font-size: 40px;
-    text-align: center;
-    padding: 30px;
+.col:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgb(0, 0,0, 0.6);
 }
 
-.col{ 
-    margin-top: 50px;;
-    width: 100px;
-    text-align: center;
-    margin-left: 150px;
- 
-   
-    border-right: solid #bebebe 1px;
-    padding-bottom: 30px;
-    float: left;
+.col i{
+    grid-area: bar;
 }
-.col:last-child{
-    border-right: none;
+.col h3{
+    grid-area: notify;
 }
 .col p{
-    padding: 10px 0px;
-    color: rgb(136, 37, 37);
-    padding-bottom: 30px;
+    grid-area: text;
+    margin: 10px;
 }
 .col a{
-    background-color: rgb(74, 156, 233);
-    color: #bebebe;
-    font-size: 17px;
-    text-decoration: none;
-    border: solid white 2px;
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 20px;
-    transition: 0.7s;
+    grid-area: stats;
+        background-color: rgb(74, 156, 233);
+        color: #bebebe;
+        font-size: 20px;
+        text-decoration: none;
+        border: solid white 2px;
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 20px;
+        transition: 0.7s;
 }
 .col a:hover{
-background-color: black;
+        background-color: black;
 }
-.server::after{
-    content: " ";
-    display: block;
-    clear: both;
-    *zoom: 1;
+.pro1{
+    background-color: rgb(191, 108, 202);
 }
-.project{
+.pro1 h1{
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 0;
+    font-size: 40px;
+    margin-top: 40px;
     margin-bottom: 20px;
-    margin-top: 20px;
-    background-color:rgb(235, 226, 236) ;
 }
-
 .pro{ 
     position: relative;
     margin-top: 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgb(191, 108, 202);
+    
     text-align: center;
    
     padding: 30px;
@@ -206,18 +218,35 @@ background-color: black;
     opacity: 1;
     margin-top: -40px;
 }
-.price{
+.card-btn{
+    background-color: rgb(74, 156, 233);
+        color: #bebebe;
+        font-size: 20px;
+        text-decoration: none;
+        border: solid white 2px;
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 20px;
+        transition: 0.7s;
+}
+.card-btn:hover{
+    background-color: rgb(63, 9, 9);
+}
+.pricing1{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.pricing1 h1{
     text-align: center;
     align-items: center;
-    background-color: #bebebe;
-    margin-left: 250px;
-    margin-right: 250px;
+    justify-content: center;
+    font-size: 40px;
 }
 
 .pricing{ 
     position: relative;    
     display: block;
-      background-color: antiquewhite;
+      
       margin-top: 0;
       margin-left: 250px;
       margin-right: 250px;
@@ -229,7 +258,7 @@ background-color: black;
     background-color: #bebebe;
 }
 .plan1{ 
-    margin-top: 50px;;
+    margin-top: 20px;
     width: 100px;
     text-align: center;
     margin-left: 150px;
@@ -259,8 +288,8 @@ background-color: black;
     transition: 0.7s;
 }
 .pri-btn a:hover{
-background-color: black;
-}
+    background-color: black;
+    }
 .pricing::after{
     content: " ";
     display: block;
@@ -270,9 +299,7 @@ background-color: black;
 .v{
     text-align: center;
     align-items: center;
-    background-color: bisque;
-    margin-left: 250px;
-    margin-right: 250px;
+   font-size: 50px;
 }
 
 main {
@@ -283,9 +310,9 @@ main {
     display: flex;
     background-image: url("images/video/v2.jpg");
     height: 500px;
-    margin-left: 250px;
+    background-size: cover;
     color: white;
-    margin-right: 250px;
+    
 }
 
 .vid1 h3{
@@ -331,21 +358,20 @@ main {
    width: 100%;
     margin: auto;
     background-color: #fff;
-    overflow: auto;
-    
-    margin-left: 100px;
-    margin-right: 250px;
-    
+    overflow: auto; 
     position: relative;
 }
 .lyf h1{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-    margin-left: 500px;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px 5px;
 }
 .gallery{
-    margin: 10px 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
    
 }
 .gallery img{
@@ -362,8 +388,8 @@ main {
 .sign{
     justify-content: center;
     text-align: center;
-    background-color:#fff;
-    margin: 0 150px 0 150px;
+    background-image: url("images/home/2.jpg");
+    background-size: cover;
 }
 .sign h1{
     font-size: 30px;
@@ -373,11 +399,23 @@ main {
 }
 .contact{
     display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+.abc{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
+    background-size: cover;
+}
+.xyz{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+width: 1000px;
+float: right;
 }
 footer{
     background-color: black;
